@@ -1,0 +1,133 @@
+/* Estilos generales */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    border-bottom: 2px solid #654ea3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo personalizado para el menú desplegable */
+.dropdown-menu-custom {
+    background-color: rgba(27, 31, 59, 0.95); 
+    width: 250px;
+    border-radius: 8px; 
+    border: none; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Color del texto de las opciones del menú */
+.dropdown-item {
+    color: #ffffff;
+    padding: 12px 20px; 
+}
+
+/* Hover en el menú desplegable */
+.dropdown-item:hover {
+    background-color: #dd48a1;
+    color: #000000;
+}
+
+/* Información de contacto */
+.contact-info {
+    border: solid 1px white;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón de envío */
+.btn-submit {
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(to right, #654ea3, #1b1f3b);
+    transition: transform 0.3s ease;
+    
+}
+
+.btn-submit:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ad5389;
+}
+
+
+.formulario-contacto, .contact-info {
+    animation: aparicion 1s ease-in-out;
+}
+
+@keyframes aparicion {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Estilos personalizados para el acordeón */
+.accordion-custom .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color:#654ea3;
+}
+
+.accordion-custom .accordion-button {
+    background-color:#654ea3;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: none;
+}
+
+.accordion-custom .accordion-button:hover {
+    background: linear-gradient(to right, #e74ac0, #882d71);
+}
+
+.accordion-custom .accordion-body {
+    background-color: #1b1f3b;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1rem;
+
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+    border-bottom: none; /* Elimina el borde inferior al expandir */
+    box-shadow: none; /* Elimina la sombra que podría estar creando ese efecto */
+}
+
+
